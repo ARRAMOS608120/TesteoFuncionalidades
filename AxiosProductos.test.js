@@ -9,8 +9,8 @@ function getProducts() {
 function addProduct() {
     axios.post(endpoint, {
         title: "test",
-        price: "11",
-        thumbnail: "imagen1"
+        price: "1",
+        thumbnail: "imagenprueba"
     })
     .then(() => {
        return getProducts()

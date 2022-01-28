@@ -16,8 +16,8 @@ describe("Comprobando el post y get de productos", function() {
 
         await axios.post(endpoint, {
                                         title: "test",
-                                        price: "11",
-                                        thumbnail: "imagen1"
+                                        price: "1",
+                                        thumbnail: "imagenprueba"
                                     })
         const response = await axios.get(endpoint)
         const prods = response.data
@@ -35,8 +35,8 @@ describe("Comprobando el post y get de productos", function() {
         notDeepStrictEqual(prod, [
             {
                 title: "test",
-                price: "11",
-                thumbnail: "imagen1"
+                price: "1",
+                thumbnail: "imagenprueba"
             }
         ])
 
